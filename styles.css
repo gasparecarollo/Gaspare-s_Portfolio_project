@@ -1,0 +1,50 @@
+@import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+
+
+* {
+    background-color: beige;
+    width: 100%;
+    font-family: 'Pokemon Solid', sans-serif;
+    color: rgba(246, 46, 10, 0.587);
+
+}
+
+/* #header {
+
+    border: 10px;
+    border-radius: 10px;
+    border-color: darkolivegreen;
+} */
+
+/* #navbar {
+    background-image: url("Assets/PokeMap.png");
+    width: 800px;
+    height: 300px;
+
+} */
+
+.divContainer {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#Home {
+
+    position: absolute;
+    offset-position: 196px 45px;
+
+}
+
+.form_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#friendrequest {
+
+    border-style: inset;
+    border-radius: 5px;
+    border-color: dodgerblue;
+    border-width: 25px;
+}
