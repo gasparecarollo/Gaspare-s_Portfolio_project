@@ -19,12 +19,21 @@
             <input type="number" id="level" placeholder="0" required />
             <label for="imageUrl"> Item Image</label>
             <input type="text" id="imageUrl" placeholder="Image URL" />
+            <label for="teamname"> Pokemon Team:</label>
+            <div class="bg_teamname">
+                <select id="teamname">
+                    <option value="No team"> No Team Selected</option>
+                    <option value="Instinct"> Instinct</option>
+                    <option value="Mystic"> Mystic</option>
+                    <option value="Valor"> Valor</option>
+                </select>
+            </div>
             <button class="submitBtn" type="submit" value="submit" name="submit">Submit</button>
             <button class="resetBtn" type="reset" value="reset" name="reset" onclick="resetData()"> Reset</button>
         </form>
     </div>
     <ul id="friendrequest"> Friend List</ul>
-    <div class="card_bg">
+    <div id="card_js">
         <span class="title_on_card"> GASPARITUS</span>
 
     </div>
