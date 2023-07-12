@@ -7,12 +7,8 @@ select_teamname.eventListener("change"), (event) => {
     else if (teamChosen === "Instinct") { document.getElementById("teamname").style.backgroundImage = "url('Assets/4024146-middle.png')"; }
     else if (teamChosen === "Mystic") { document.getElementById("teamname").style.backgroundImage = "url('Assets/4024146-middle.png')"; }
     else if (teamChosen === "Valor") { document.getElementById("teamname").style.backgroundImage = "url('Assets/4024146-middle.png')"; }
-    else { document.getElementById("bgi").style.backgroundImage = "url('')"; }
+    else { document.getElementById("bgi").style.backgroundImage = "url('Assets/selectateam.jpeg')"; }
 }
-
-
-
-
 
 fetch("https://pokeapi.co/api/v2/pokemon/")
     .then(response => response.json())

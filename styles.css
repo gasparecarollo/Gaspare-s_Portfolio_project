@@ -39,7 +39,17 @@
 .form_container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-top: 15%;
 }
+
+/* .playerCard {
+
+    margin-left: 95%;
+    margin-bottom: 20%;
+
+
+
+} */
 
 #friendrequest {
 
