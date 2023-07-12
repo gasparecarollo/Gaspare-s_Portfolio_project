@@ -3,11 +3,12 @@
 
 * {
     background-color: beige;
-    width: 100%;
     font-family: 'Pokemon Solid', sans-serif;
     color: rgba(246, 46, 10, 0.587);
+    width: 100%;
 
 }
+
 
 /* #header {
 
@@ -15,31 +16,103 @@
     border-radius: 10px;
     border-color: darkolivegreen;
 } */
-
-/* #navbar {
-    background-image: url("Assets/PokeMap.png");
-    width: 800px;
-    height: 300px;
-
-} */
-
 .divContainer {
 
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-#Home {
+/* #navbar {
+    background-image: url("Assets/PokeMap.png");
+    width: 790px;
+    height: 300px;
 
-    position: absolute;
-    offset-position: 196px 45px;
+} */
+
+#home {
+    border-style: groove;
+    border-color: white;
+    border-radius: 5px;
+    border-width: 5px;
+    width: 3%;
+
 
 }
+
+#pokectr {
+    border-style: groove;
+    border-color: white;
+    border-radius: 5px;
+    border-width: 5px;
+    width: 7.5%
+}
+
+#pokegym {
+    border-style: groove;
+    border-color: white;
+    border-radius: 5px;
+    border-width: 5px;
+    width: 6%
+}
+
+#pokelounge {
+    border-style: groove;
+    border-color: white;
+    border-radius: 5px;
+    border-width: 5px;
+    width: 7.5%;
+}
+
+#pokemart {
+    border-style: groove;
+    border-color: white;
+    border-radius: 5px;
+    border-width: 5px;
+    width: 6%;
+}
+
 
 .form_container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 15%;
+}
+
+#imgsrc {
+    position: relative;
+    width: 40px;
+    height: 50px;
+    margin-left: 35%;
+    margin-bottom: 20%;
+
+}
+
+#imgsrc {
+    position: relative;
+    width: 40px;
+    height: 50px;
+    margin-left: 35%;
+    margin-bottom: 20%;
+
+}
+
+#imgsrc2 {
+    position: relative;
+    width: 40px;
+    height: 50px;
+    margin-left: 25%;
+    margin-bottom: 20%;
+
+}
+
+
+
+#h1title {
+    margin-left: 30%;
+    margin-top: 5%;
+    border-style: dashed;
+    border-radius: 8px;
+    border-color: orangered;
+    width: 42%;
 }
 
 /* .playerCard {
