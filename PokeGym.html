@@ -6,45 +6,55 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Poke Gym</title>
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="styles.css">
     <script src="index.js" defer></script>
 </head>
+<div class="div_container">
+    <div id="header">
+        <header>
+            <a href="#"> <img src="Assets/PokeMap.png" class="headerImg" alt="" width="225px" height="350px"
+                    onmouseover="hoverOver()" onmouseout="hoverAway()"></a>
+            <nav>
+                <ul id="navMenu">
+                    <li id="home"> <a href="index.html"> Home</a></li>
+                    <li id="pokegym"> <a href="PokeGym.html"> Poke Gym</a></li>
+                    <li id="pokectr"> <a href="PokeCtr.html"> Poke Center</a></li>
+                    <li id="pokemart"> <a href="PokeMart.html"> Poke Mart </a> </li>
+                    <li id="pokelounge"> <a href="PokeLounge.html"> Poke Lounge</a> </li>
+                </ul>
 
-<body>
-    <div class="container">
-        <h1>Dunno what this is</h1>
-        <section class="centered">
-            <form id="myForm">
-                <button type="submit">Get New Whatever it is</button>
-            </form>
-        </section>
-        <main>
-            <div class="cardcontainer">
-                <div class="photo">
-                    <img
-                        src="https://images.pexels.com/photos/2346006/pexels-photo-2346006.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=1&w=500">
-                    <div class="photos">Photos</div>
-                </div>
-                <div class="content">
-                    <p class="txt4">City Lights In New York</p>
-                    <p class="txt5">A city that never sleeps</p>
-                    <p class="txt2">New York, the largest city in the U.S., is an architectural
-                        marvel with plenty of historic monuments, magnificent buildings and countless dazzling
-                        skyscrapers.</p>
-                </div>
-                <div class="footer">
-                    <p><a class="waves-effect waves-light btn" href="#">Read More</a><a id="heart"><span class="like"><i
-                                    class="fab fa-gratipay"></i>Like</span></a></p>
-                    <p class="txt3"><i class="far fa-clock"></i>10 Minutes Ago <span class="comments"><i
-                                class="fas fa-comments"></i>45 Comments</span></p>
-                </div>
-            </div>
-        </main>
+            </nav>
     </div>
-</body>
+    </header>
+
+    <body>
+        <div class="container">
+            <h1>Dunno what this is</h1>
+            <section class="centered">
+                <form id="myForm">
+                    <button type="submit">Get New Whatever it is</button>
+                </form>
+            </section>
+            <main>
+                <div class="cardcontainer">
+                    <div class="photo">
+                        <img src="Assets/Castelia_Gym_field.png">
+                        <div class="photos">Photos</div>
+                    </div>
+                    <div class="content">
+                        <p class="txt4"></p>
+                        <p class="txt5"></p>
+                        <p class="txt2"></p>
+                    </div>
+                    <div class="footer">
+                        <p><a class="waves-effect waves-light btn" href="#">Read More</a><a id="heart"><span
+                                    class="like"><i class="fab fa-gratipay"></i>Like</span></a></p>
+                        <p class="txt3"><i class="far fa-clock"></i>10 Minutes Ago <span class="comments"><i
+                                    class="fas fa-comments"></i>45 Comments</span></p>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </body>
 
 </html>
