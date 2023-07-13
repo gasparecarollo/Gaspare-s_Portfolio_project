@@ -47,11 +47,11 @@
             <label for="formName"> Player Card Form</label>
             </br>
             </br>
-            <label for="trainername"> Pokemon Trainer Name:</label>
+            <label> Pokemon Trainer Name:</label>
             <input type="text" id="playername" placeholder="Pokemon Trainer Name" required />
-            <label for="level"> XP Level: </label>
+            <label> XP Level: </label>
             <input type="number" id="level" placeholder="0" required />
-            <label for="imageUrl"> Item Image</label>
+            <label> Friend QR Code</label>
             <input type="text" id="imageUrl" placeholder="Image URL" />
             <label for="teamname"> Pokemon Team:</label>
             <div class="bg_teamname">
@@ -62,8 +62,8 @@
                     <option value="Valor"> Valor</option>
                 </select>
             </div>
-            <button class="submitBtn" type="submit" value="submit" name="submit">Submit</button>
-            <button class="resetBtn" type="reset" value="reset" name="reset" onclick="resetData()"> Reset</button>
+            <button id="submitBtn" type="submit" value="submit" name="submit">Submit</button>
+            <button id="resetBtn" type="reset" value="reset" name="reset" onclick="resetData()"> Reset</button>
         </form>
     </div>
     <ul id="friendrequest"> Friend List</ul>
