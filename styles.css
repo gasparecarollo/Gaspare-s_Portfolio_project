@@ -9,6 +9,10 @@
 
 }
 
+Body h1 {
+
+    margin-left: 45%;
+}
 
 /* #header {
 
@@ -16,10 +20,32 @@
     border-radius: 10px;
     border-color: darkolivegreen;
 } */
+
 .divContainer {
 
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+
+.container h1 {
+
+    margin: auto;
+}
+
+#myForm {
+    margin-left: 40%;
+
+}
+
+#navMenu {
+
+    display: flex;
+    grid-area: auto;
+    list-style: none;
+}
+
+#navMenu li :hover {
+    background-color: yellowgreen;
 }
 
 /* #navbar {
@@ -102,6 +128,14 @@
     margin-left: 25%;
     margin-bottom: 20%;
 
+}
+
+.card-grid {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 25px auto;
+    width: 75%;
 }
 
 
@@ -193,4 +227,81 @@ button {
     margin-bottom: 5px;
     border-bottom: 1px solid gray;
     padding-bottom: 3px;
+}
+
+#footsoldier img {
+    margin-left: 60%;
+    width: 25%;
+}
+
+#footsoldier h4 {
+
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+}
+
+@media (max-width: 1279px) {
+
+    .splash {
+
+        display: none;
+    }
+
+    main {
+
+        width: 90%;
+    }
+
+    footer {
+
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: 768px) {
+
+
+        header {
+
+            grid-template-columns: 1fr;
+
+        }
+
+        main {
+
+            grid-template-columns: 1fr;
+
+            row-gap: 50px;
+            column-gap: 0px;
+
+        }
+
+        footer {
+
+            padding: 25px;
+            text-align: center;
+
+
+        }
+
+        footer ul {
+
+            list-style: none;
+
+        }
+
+        footer h4 {
+
+            border-bottom: none;
+
+        }
+    }
+
+}
+
+@media (min-width: 500px) {
+
+    .test {
+        border: 100px solid rgb(0, 0, 0);
+    }
+
 }

@@ -81,13 +81,14 @@ function displayCard(typeName, counters) {
 const select_teamname = document.querySelector("#teamname");
 select_teamname.addEventListener("change", (event) => {
 
-    teamChosen = document.getElementById("teamname").value;
+    const teamChosen = document.getElementById("teamname").value;
+    const cardContainer = document.getElementById("card_js")
 
-    if (teamChosen === "none") { document.getElementById("teamname").style.backgroundColor = "red"; }
-    else if (teamChosen === "Instinct") { document.getElementById("teamname").style.backgroundImage = "url('Assets/4024146-middle.png')"; }
-    else if (teamChosen === "Mystic") { document.getElementById("teamname").style.backgroundImage = "url('Assets/4024146-middle.png')"; }
-    else if (teamChosen === "Valor") { document.getElementById("teamname").style.backgroundImage = "url('Assets/4024146-middle.png')"; }
-    else { document.getElementById("bgi").style.backgroundImage = "url('Assets/selectateam.jpeg')"; }
+    if (teamChosen === "No Team") { document.getElementById("teamname").style.backgroundImage = "url('Assets/selectateam.jpeg')"; }
+    else if (teamChosen === "Instinct") { document.getElementById("teamname").style.backgroundImage = "url('Assets/Instinct.png')"; }
+    else if (teamChosen === "Mystic") { document.getElementById("teamname").style.backgroundImage = "url('Assets/Mystic.PNG')"; }
+    else if (teamChosen === "Valor") { document.getElementById("teamname").style.backgroundImage = "url('Assets/Valor.PNG')"; }
+
 });
 
 
@@ -105,6 +106,69 @@ select_teamname.addEventListener("change", (event) => {
 // getHome.style.top = "46px";
 
 
+
+const form = document.getElementById("myForm");
+form.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    const playerName = document.getElementById("playername").value;
+    const level = document.getElementById("level").value;
+    const teamName = document.getElementById("teamname").value;
+    const imageUrl = getSelectedTeamImage(teamName);
+
+    createBorderedImage(playerName, level, teamName, imageUrl);
+});
+
+function getSelectedTeamImage(teamName) {
+    let imageUrl = "";
+    if (teamName === "Instinct") {
+        imageUrl = "Assets/instinct_image.png";
+    } else if (teamName === "Mystic") {
+        imageUrl = "Assets/mystic_image.png";
+    } else if (teamName === "Valor") {
+        imageUrl = "Assets/valor_image.png";
+    }
+    return imageUrl;
+}
+
+function createBorderedImage(playerName, level, teamName, imageUrl) {
+    const cardContainer = document.getElementById("card_js");
+    cardContainer.innerHTML = ""; // Clear any existing content
+
+    const borderedImage = document.createElement("div");
+    borderedImage.classList.add("bordered-image");
+
+    const image = document.createElement("img");
+    image.src = imageUrl;
+    borderedImage.appendChild(image);
+
+    const playerNameForCard = document.createElement("p");
+    playerNameForCard.textContent = "Player Name: " + playerName;
+    borderedImage.appendChild(playerNameForCard);
+
+    const levelForCard = document.createElement("p");
+    levelForCard.textContent = "Level: " + level;
+    borderedImage.appendChild(levelForCard);
+
+    const teamNameForCard = document.createElement("p");
+    teamNameForCard.textContent = "Team: " + teamName;
+    borderedImage.appendChild(teamNameForCard);
+
+    const removeButton = document.createElement("button");
+    removeButton.textContent = "Remove";
+    removeButton.addEventListener("click", () => {
+        cardContainer.innerHTML = "";
+    });
+
+    borderedImage.appendChild(removeButton);
+    cardContainer.appendChild(borderedImage);
+}
+
+
+function resetData() {
+    const cardTitle = document.querySelector("#card_js .title_on_card");
+    cardTitle.textContent = "";
+}
 
 
 
